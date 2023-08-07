@@ -1,10 +1,19 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
-import Layout from './components/Layout';
+import Nation from './components/Nation';
+import { fetchNobel } from './redux/nationSlice/NationSlice';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchNobel());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <Layout />
+      <Nation />
     </div>
   );
 }

@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 body {
   font-size: 14px;
-  font-family: Roboto, fantasy;
+  font-family: Lato, fantasy;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0.2rem;
+  font-family: Lato, fantasy;
 }
