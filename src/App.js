@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
 import './App.css';
-import Nation from './components/Nation';
 import { fetchNobel } from './redux/nationSlice/NationSlice';
+import Allroutes from './routes/Allroutes';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nation />
+      <Allroutes />
     </div>
   );
 }

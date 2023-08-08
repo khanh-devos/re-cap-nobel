@@ -3,6 +3,7 @@
 body {
   font-size: 14px;
   font-family: Lato, fantasy;
+  border: 1px solid red;
 }
 
 * {
