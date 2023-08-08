@@ -7,6 +7,7 @@ const initialState = {
   nobels: [],
   isLoading: true,
   amount: 0,
+  uniqueCountries: [],
 };
 
 export const fetchNobel = createAsyncThunk(
@@ -20,6 +21,22 @@ export const fetchNobel = createAsyncThunk(
     }
   },
 );
+
+const takeUniqueCountries = (arr) => {
+  const uniqueCountries = [];
+  const compare = [];
+
+  arr.forEach(({ country, id, city }) => {
+    if (!compare.includes(country)) {
+      compare.push(country);
+      uniqueCountries.push({ id, country, cities: [city] });
+    } else {
+      const check = uniqueCountries.find((item) => item.country === country);
+      check.cities.push(city);
+    }
+  });
+  return uniqueCountries;
+};
 
 const nobelSlice = createSlice({
   name: 'nobelSlice',
@@ -35,14 +52,17 @@ const nobelSlice = createSlice({
         const arr = payload.laureates.map((item) => {
           const { id, fullName: { en: fullname }, gender } = item;
           const { date } = item.birth;
-          const { en: city } = item.birth.place?.cityNow || 'unknown';
-          const { en: country } = item.birth.place?.countryNow || 'unknown';
+          const { en: city } = item.birth.place?.cityNow || { en: 'Unknown_City' };
+          const { en: country } = item.birth.place?.countryNow || { en: 'Unknown_Country' };
 
           const {
             awardYear,
             categoryFullName: { en: category },
             prizeAmount: prize,
           } = item.nobelPrizes[0];
+
+          // const city = city123.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+          // const country = country123.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
           return {
             id, fullname, gender, date, city, country, awardYear, category, prize,
@@ -54,6 +74,7 @@ const nobelSlice = createSlice({
           isLoading: false,
           nobels: arr,
           amount: arr.length,
+          uniqueCountries: takeUniqueCountries(arr),
         };
       })
       .addCase(fetchNobel.rejected, (state) => ({
