@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_NOBEL = 'https://api.nobelprize.org/2.1/laureates';
+export const API_NOBEL = 'https://api.nobelprize.org/2.1/laureates';
 
 const initialState = {
   nobels: [],

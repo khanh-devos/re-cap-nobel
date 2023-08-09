@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test all the App: should match the snapshot APP 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot APP 2`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot Allroutes 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot CityRoute 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot Nation 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot NationItem 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot NationRoute 1`] = `<div />`;
+
+exports[`Test all the App: should match the snapshot Winner 1`] = `<div />`;
+
+exports[`Test rejection case should match the snapshot APP 1`] = `<div />`;
