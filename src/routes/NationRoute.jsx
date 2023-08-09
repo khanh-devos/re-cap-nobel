@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 export default function NationRoute({ country }) {
-  const navigate = useNavigate();
   const { uniqueCountries } = useSelector((store) => store.nobel);
   const { cities } = uniqueCountries.find((item) => item.country === country);
   const uniqueCity = {};
@@ -13,6 +12,7 @@ export default function NationRoute({ country }) {
     else uniqueCity[item] += 1;
   });
 
+  const navigate = useNavigate();
   const handleBack = (e) => {
     e.preventDefault();
     navigate('/');
