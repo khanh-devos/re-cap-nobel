@@ -15,7 +15,7 @@ export default function CityRoute({ city, country }) {
 
   return (
     <div>
-      <button role={'buttonRole'} type="button" id={`${country}`} onClick={handleBack}>Back</button>
+      <button type="button" id={`${country}`} onClick={handleBack}>Back</button>
 
       {
     winners.map(({ id }) => <Winner key={id} id={id} />)

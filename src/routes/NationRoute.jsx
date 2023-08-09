@@ -11,7 +11,7 @@ export default function NationRoute({ country }) {
     if (!uniqueCity[item]) uniqueCity[item] = 1;
     else uniqueCity[item] += 1;
   });
-  
+
   const navigate = useNavigate();
   const handleBack = (e) => {
     e.preventDefault();
