@@ -7,10 +7,10 @@
   --stdPadd: 0.2rem;
   --imgHeight: 5rem;
   --padMobile: 15rem;
+
   @media screen and (max-width: 768px) {
     --padMobile: 0.2rem;
   }
-
 }
 
 body {

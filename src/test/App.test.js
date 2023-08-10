@@ -178,7 +178,7 @@ describe('Test all the App:', () => {
         <Provider store={store}>
           <MemoryRouter>
             <Routes>
-            <Route path="/" element={<Nation />} />
+              <Route path="/" element={<Nation />} />
             </Routes>
           </MemoryRouter>
         </Provider>,
@@ -191,8 +191,8 @@ describe('Test all the App:', () => {
     await act(async () => {
       const { container } = render(
         <Provider store={store}>
-          <MemoryRouter initialEntries={['/c1']} >
-          <NationItem index={0} country="c1" count={2} />
+          <MemoryRouter initialEntries={['/c1']}>
+            <NationItem index={0} country="c1" count={2} />
           </MemoryRouter>
         </Provider>,
       );
@@ -204,7 +204,7 @@ describe('Test all the App:', () => {
     await act(async () => {
       const { container } = render(
         <Provider store={store}>
-          <MemoryRouter initialEntries={['/c1', '/']} >
+          <MemoryRouter initialEntries={['/c1', '/']}>
             <MyHeader stats="country" title="city" country="c1" amount={1} />
           </MemoryRouter>
         </Provider>,
@@ -212,6 +212,4 @@ describe('Test all the App:', () => {
       expect(container).toMatchSnapshot();
     });
   });
-
-
 });
