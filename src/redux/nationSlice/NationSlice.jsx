@@ -52,8 +52,8 @@ const nobelSlice = createSlice({
         const arr = payload.laureates.map((item) => {
           const { id, fullName: { en: fullname }, gender } = item;
           const { date } = item.birth;
-          const { en: city } = item.birth.place?.cityNow || { en: 'Unknown_City' };
-          const { en: country } = item.birth.place?.countryNow || { en: 'Unknown_Country' };
+          const { en: city } = item.birth.place?.cityNow || { en: 'Unknown' };
+          const { en: country } = item.birth.place?.countryNow || { en: 'Unknown' };
 
           const {
             awardYear,
