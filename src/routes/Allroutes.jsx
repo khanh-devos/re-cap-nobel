@@ -10,7 +10,7 @@ export default function Allroutes() {
   const { uniqueCountries } = useSelector((store) => store.nobel);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="re-cap-nobel">
       <Routes>
         <Route path="/" element={<Nation />} />
         {
