@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+
 :root {
   --color1: #ec4c8b;
   --color2: #fe5395;
@@ -7,10 +8,10 @@
   --imgHeight: 5rem;
 }
 
-
 body {
   font-size: 14px;
   font-family: Lato, fantasy;
+
   /* background: #fe5395; */
   background: var(--color1);
   padding: var(--stdPadd);
@@ -101,7 +102,7 @@ body {
   padding: 0.5rem;
   padding-bottom: 1rem;
   border: none;
-  background:var(--color3);
+  background: var(--color3);
 }
 
 .nation-item:active {
@@ -138,10 +139,6 @@ body {
   justify-content: flex-start;
 }
 
-.nation-route-item:nth-child(even) {
-  background: var(--color3);
-}
-
 .nation-route-item {
   height: 5rem;
   padding: var(--stdPadd);
@@ -153,7 +150,11 @@ body {
   align-items: center;
 }
 
-.nation-route-item-part2{
+.nation-route-item:nth-child(even) {
+  background: var(--color3);
+}
+
+.nation-route-item-part2 {
   display: flex;
   flex-direction: row;
   gap: 1rem;
