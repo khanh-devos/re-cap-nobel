@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/re-cap-nobel/static/css/main.e464d45f.css",
+    "main.js": "/re-cap-nobel/static/js/main.1baa1085.js",
+    "static/js/787.7f925689.chunk.js": "/re-cap-nobel/static/js/787.7f925689.chunk.js",
+    "static/media/world map.png": "/re-cap-nobel/static/media/world map.ec4fbd8405c23a5b1acf.png",
+    "static/media/france map.png": "/re-cap-nobel/static/media/france map.a66acc11ba1c24aa385b.png",
+    "static/media/algeria map.png": "/re-cap-nobel/static/media/algeria map.244ebf266acc4426b8b3.png",
+    "static/media/pakistan map.png": "/re-cap-nobel/static/media/pakistan map.09fcc54cf4092158fe73.png",
+    "static/media/belgium map.png": "/re-cap-nobel/static/media/belgium map.82a878f862a765a358ea.png",
+    "static/media/unknown map.png": "/re-cap-nobel/static/media/unknown map.8c7d0876f06adf9ee06a.png",
+    "static/media/israel map.png": "/re-cap-nobel/static/media/israel map.43e183c203c6b64cdc37.png",
+    "static/media/lithuania map.png": "/re-cap-nobel/static/media/lithuania map.0ccd62555f088bc2591c.png",
+    "static/media/germany map.png": "/re-cap-nobel/static/media/germany map.567aaa31e52712ffa914.png",
+    "static/media/denmark map.png": "/re-cap-nobel/static/media/denmark map.46acf4d446fdf7e1a551.png",
+    "static/media/ethiopia map.png": "/re-cap-nobel/static/media/ethiopia map.ec3496a035a150c55458.png",
+    "static/media/japan map.png": "/re-cap-nobel/static/media/japan map.9d6a4f065a79b4700e19.png",
+    "static/media/usa map.png": "/re-cap-nobel/static/media/usa map.21779c82a29f36fb3851.png",
+    "static/media/united kingdom map.png": "/re-cap-nobel/static/media/united kingdom map.a3d8b3f040540375f57f.png",
+    "static/media/new zealand map.png": "/re-cap-nobel/static/media/new zealand map.577c9760c1b0ed761146.png",
+    "static/media/india map.png": "/re-cap-nobel/static/media/india map.106e88bc00f7550cef31.png",
+    "index.html": "/re-cap-nobel/index.html",
+    "main.e464d45f.css.map": "/re-cap-nobel/static/css/main.e464d45f.css.map",
+    "main.1baa1085.js.map": "/re-cap-nobel/static/js/main.1baa1085.js.map",
+    "787.7f925689.chunk.js.map": "/re-cap-nobel/static/js/787.7f925689.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e464d45f.css",
+    "static/js/main.1baa1085.js"
+  ]
+}
