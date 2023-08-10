@@ -1,4 +1,4 @@
-# React-redux-group
+# RE-CAP-NOBEL 
 
 <a name="readme-top"></a>
 
@@ -27,9 +27,9 @@
 - [🙏 Acknowledgments ](#-acknowledgments-)
 - [📝 License ](#-license-)
 
-# 📖 [React-redux-group] <a name="about-project"></a>
+# 📖 [Re-cap-nobel] <a name="about-project"></a>
 
-**React-redux-group** works the real live data from the SpaceX API. It provides commercial and scientific space travel services, allows users to book|cancel rockets and join selected space missions. Kanban board is used for workload management. Testing is included.
+**Re-cap-nobel** is a mobile-view website to show a list of nobelists based on countries and cities based on the [website](https://www.nobelprize.org/about/developer-zone-2/). Clients could read the nobelists at each countries and cities in the world. Testing included.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,6 +40,9 @@
   <ul>
     <li><a href="#">React</a></li>
     <li><a href="#">Redux</a></li>
+    <li><a href="#">Router</a></li>
+    <li><a href="#">SVG</a></li>
+    <li><a href="#">CSS</a></li>
   </ul>
 </details>
 
@@ -47,8 +50,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Book or cancel a rocket**
-- **Join or leave a mission**
+- **click and see the nobelists at each country and city**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://khanh-devos.github.io/react-redux-group-kanban/)
+- [Live Demo Link](https://khanh-devos.github.io/re-cap-nobel/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +82,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/khanh-devos/react-redux-group-kanban.git
+- git clone https://github.com/khanh-devos/re-cap-nobel.git
 
 ### Install
 
@@ -149,12 +151,7 @@ To run tests, run the following command:
 
 - GitHub: [khanh-devos](https://github.com/khanh-devos)
 - Twitter: [@khanhror](https://twitter.com/home?lang=en)
-- LinkedIn: [Khanh RoR](https://www.linkedin.com/in/khanh-dom/)
-
-👤 Aqurds
-- GitHub: [@Aqurds](https://github.com/Aqurds)
-- Twitter: [@Aqurds](https://twitter.com/Aqurds)
-- LinkedIn: [omaraqurds](https://linkedin.com/in/omaraqurds)
+- LinkedIn: [Khanh Dom](https://www.linkedin.com/in/khanh-dom/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -163,7 +160,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Background Image**
+- **Styling the page of city**
 - **Add animation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -174,7 +171,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/khanh-devos/react-redux-group-kanban.git/issues).
+Feel free to check the [issues page](https://github.com/khanh-devos/re-cap-nobel.git/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

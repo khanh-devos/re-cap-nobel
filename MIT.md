@@ -5,3 +5,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [webpage/website].
 
 THE [webpage/website] IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE [webpage/website] OR THE USE OR OTHER DEALINGS IN THE [webpage/website].
+
+NOTICE: The design of this WEB-APP is by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+***A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and***
+***B. produce, reproduce, and Share Adapted Material for NonCommercial purposes only.***  

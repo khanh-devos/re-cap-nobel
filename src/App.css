@@ -6,15 +6,19 @@
   --color3: #cf4278;
   --stdPadd: 0.2rem;
   --imgHeight: 5rem;
+  --padMobile: 15rem;
+  @media screen and (max-width: 768px) {
+    --padMobile: 0.2rem;
+  }
+
 }
 
 body {
   font-size: 14px;
   font-family: Lato, fantasy;
-
-  /* background: #fe5395; */
+  margin: auto;
+  padding: 0.2rem var(--padMobile);
   background: var(--color1);
-  padding: var(--stdPadd);
 }
 
 * {
@@ -26,6 +30,7 @@ body {
 }
 
 .nation {
+  min-height: 100%;
   margin: auto;
 }
 
@@ -36,6 +41,7 @@ body {
   align-items: center;
   padding: var(--stdPadd);
   padding-left: 0;
+  background: var(--color1);
 }
 
 .header-back-btn {
