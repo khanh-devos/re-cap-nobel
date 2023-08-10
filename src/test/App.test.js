@@ -10,8 +10,7 @@ import App from '../App';
 import Allroutes from '../routes/Allroutes';
 import CityRoute from '../routes/CityRoute';
 import NationRoute from '../routes/NationRoute';
-import Winner from '../components/Winner';
-import { useAppNavigate, useAppSelector } from './mock';
+import Winner from '../routes/Winner';
 import Nation from '../components/Nation';
 import NationItem from '../components/NationItem';
 

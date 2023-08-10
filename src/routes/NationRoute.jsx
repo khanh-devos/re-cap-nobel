@@ -1,7 +1,8 @@
 import { PropTypes } from 'prop-types';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import MyHeader from '../components/Header';
+import NationRouteItem from './NationRouteItem';
 
 export default function NationRoute({ country }) {
   const { uniqueCountries } = useSelector((store) => store.nobel);
@@ -12,34 +13,17 @@ export default function NationRoute({ country }) {
     else uniqueCity[item] += 1;
   });
 
-  const navigate = useNavigate();
-  const handleBack = (e) => {
-    e.preventDefault();
-    navigate('/');
-  };
-
-  const handleCity = (event) => {
-    event.preventDefault();
-    navigate(event.target.id);
-  };
-
   return (
-    <div>
-      <button type="button" onClick={handleBack}>
-        {'_<_'}
-      </button>
+    <div className="nation-route">
+      <MyHeader stats="City breakdown" title="country nobel winners" country={country} amount={cities.length} />
 
-      <h2>{country}</h2>
-      {
+      <div className="nation-route-flex">
+        {
         Object.keys(uniqueCity).map((city) => (
-          <button key={uuidv4()} type="button" id={city} onClick={handleCity}>
-            {city}
-            {' : '}
-            {uniqueCity[city]}
-          </button>
+          <NationRouteItem key={uuidv4()} city={city} count={uniqueCity[city]} />
         ))
       }
-
+      </div>
     </div>
   );
 }

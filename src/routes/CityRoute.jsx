@@ -1,21 +1,15 @@
 import { PropTypes } from 'prop-types';
 import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import Winner from '../components/Winner';
+import MyHeader from '../components/Header';
+import Winner from './Winner';
 
 export default function CityRoute({ city, country }) {
   const { nobels } = useSelector((store) => store.nobel);
   const winners = nobels.filter((item) => item.city === city);
-  const navigate = useNavigate();
-
-  const handleBack = (event) => {
-    event.preventDefault();
-    navigate(`/${country}`);
-  };
 
   return (
     <div>
-      <button type="button" id={`${country}`} onClick={handleBack}>Back</button>
+      <MyHeader stats={city} title="city nobel winners" country={country} amount={winners.length} />
 
       {
     winners.map(({ id }) => <Winner key={id} id={id} />)

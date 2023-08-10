@@ -8,22 +8,25 @@ export default function Winner({ id }) {
   } = nobels.find((item) => item.id === id);
 
   return (
-    <div>
-
+    <div className="winners">
       <h3>
-        Name :
+        Name
+        {' : '}
         {fullname}
       </h3>
       <h3>
-        City :
+        City
+        {' : '}
         {city}
       </h3>
       <h3>
-        BirthDate :
+        BirthDate
+        {' : '}
         {date}
       </h3>
       <h3>
-        Awarded Year :
+        Awarded Year
+        {' : '}
         {awardYear}
       </h3>
       <p>--------------------</p>
