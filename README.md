@@ -29,7 +29,8 @@
 
 # 📖 [Re-cap-nobel] <a name="about-project"></a>
 
-**Re-cap-nobel** is a mobile-view website to show a list of nobelists based on countries and cities based on the [website](https://www.nobelprize.org/about/developer-zone-2/). Clients could read the nobelists at each countries and cities in the world. Testing included.
+**Re-cap-nobel** is a mobile-view website to show a list of Nobelists based on the information fetching the API from [website](https://www.nobelprize.org/about/developer-zone-2/). Clients could read the Nobelists of each country and city in the world. Testing included.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
