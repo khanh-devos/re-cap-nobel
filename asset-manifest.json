@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/re-cap-nobel/static/css/main.e464d45f.css",
-    "main.js": "/re-cap-nobel/static/js/main.9ccd392b.js",
+    "main.js": "/re-cap-nobel/static/js/main.480ae331.js",
     "static/js/787.7f925689.chunk.js": "/re-cap-nobel/static/js/787.7f925689.chunk.js",
     "static/media/world map.png": "/re-cap-nobel/static/media/world map.ec4fbd8405c23a5b1acf.png",
     "static/media/france map.png": "/re-cap-nobel/static/media/france map.a66acc11ba1c24aa385b.png",
@@ -21,11 +21,11 @@
     "static/media/india map.png": "/re-cap-nobel/static/media/india map.106e88bc00f7550cef31.png",
     "index.html": "/re-cap-nobel/index.html",
     "main.e464d45f.css.map": "/re-cap-nobel/static/css/main.e464d45f.css.map",
-    "main.9ccd392b.js.map": "/re-cap-nobel/static/js/main.9ccd392b.js.map",
+    "main.480ae331.js.map": "/re-cap-nobel/static/js/main.480ae331.js.map",
     "787.7f925689.chunk.js.map": "/re-cap-nobel/static/js/787.7f925689.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e464d45f.css",
-    "static/js/main.9ccd392b.js"
+    "static/js/main.480ae331.js"
   ]
 }
