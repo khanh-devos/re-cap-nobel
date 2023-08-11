@@ -59,6 +59,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Video Introduction](https://www.loom.com/share/a83cefa6b23444a5afba003ff8b78612?sid=16cf62cd-1bec-4bb9-8fe3-efac96fe5af4)
+
 - [Live Demo Link](https://khanh-devos.github.io/re-cap-nobel/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

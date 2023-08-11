@@ -22,9 +22,10 @@ export const fetchNobel = createAsyncThunk(
   },
 );
 
-const takeUniqueCountries = (arr) => {
+export const takeUniqueCountries = (arr) => {
   const uniqueCountries = [];
   const compare = [];
+  // console.log('takeUniqueCountries'.toUpperCase());
 
   arr.forEach(({ country, id, city }) => {
     if (!compare.includes(country)) {
