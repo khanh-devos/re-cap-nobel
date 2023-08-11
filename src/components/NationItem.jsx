@@ -1,6 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import IMAGES, { ArrowCircleRightIcon } from '../imgs/container';
+import IMAGES, { ArrowCircleRightIcon } from '../container';
 
 export default function NationItem({ country, count, index }) {
   const navigate = useNavigate();

@@ -1,22 +1,22 @@
-import usa from './usa map.png';
-import denmark from './denmark map.png';
-import israel from './israel map.png';
-import unknown from './unknown map.png';
-import ethiopia from './ethiopia map.png';
-import germany from './germany map.png';
-import india from './india map.png';
-import lithuania from './lithuania map.png';
-import pakistan from './pakistan map.png';
-import algeria from './algeria map.png';
-import argentina from './argentina map.png';
-import belgium from './belgium map.png';
-import france from './france map.png';
-import japan from './japan map.png';
-import newzealand from './new zealand map.png';
-import poland from './poland map.png';
-import unitedkingdom from './united kingdom map.png';
-import egypt from './egypt map.png';
-import theworld from './world map.png';
+import usa from './imgs/usa map.png';
+import denmark from './imgs/denmark map.png';
+import israel from './imgs/israel map.png';
+import unknown from './imgs/unknown map.png';
+import ethiopia from './imgs/ethiopia map.png';
+import germany from './imgs/germany map.png';
+import india from './imgs/india map.png';
+import lithuania from './imgs/lithuania map.png';
+import pakistan from './imgs/pakistan map.png';
+import algeria from './imgs/algeria map.png';
+import argentina from './imgs/argentina map.png';
+import belgium from './imgs/belgium map.png';
+import france from './imgs/france map.png';
+import japan from './imgs/japan map.png';
+import newzealand from './imgs/new zealand map.png';
+import poland from './imgs/poland map.png';
+import unitedkingdom from './imgs/united kingdom map.png';
+import egypt from './imgs/egypt map.png';
+import theworld from './imgs/world map.png';
 
 export const MicroIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="25" width="25" viewBox="0 -960 960 960"><path d="M480-423q-43 0-72-30.917-29-30.916-29-75.083v-251q0-41.667 29.441-70.833Q437.882-880 479.941-880t71.559 29.167Q581-821.667 581-780v251q0 44.167-29 75.083Q523-423 480-423Zm0-228Zm-30 531v-136q-106-11-178-89t-72-184h60q0 91 64.288 153t155.5 62Q571-314 635.5-376 700-438 700-529h60q0 106-72 184t-178 89v136h-60Zm30-363q18 0 29.5-13.5T521-529v-251q0-17-11.788-28.5Q497.425-820 480-820q-17.425 0-29.212 11.5Q439-797 439-780v251q0 19 11.5 32.5T480-483Z" /></svg>
