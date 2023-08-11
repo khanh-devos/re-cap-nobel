@@ -1,10 +1,13 @@
 import { PropTypes } from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import IMAGES, { BackIcon, MicroIcon, SettingIcon } from '../imgs/container';
+import IMAGES, { BackIcon, MicroIcon, SettingIcon } from '../container';
 
 export default function MyHeader({
   stats, title, country, amount,
 }) {
+  const style = title.includes('country') ? { alignItems: 'flex-end' }
+    : { alignItems: 'flex-start' };
+
   const navigate = useNavigate();
   const handleBack = (e) => {
     e.preventDefault();
@@ -14,9 +17,6 @@ export default function MyHeader({
       navigate('/');
     }
   };
-
-  const style = title.includes('country') ? { alignItems: 'flex-end' }
-    : { alignItems: 'flex-start' };
 
   return (
     <div className="header">

@@ -1,4 +1,6 @@
-import { render, screen, act } from '@testing-library/react';
+import {
+  render, screen, act, fireEvent,
+} from '@testing-library/react';
 import axios from 'axios';
 import { Provider } from 'react-redux';
 import {
@@ -123,9 +125,7 @@ describe('Test all the App:', () => {
       const { container } = render(
         <Provider store={store}>
           <MemoryRouter initialEntries={['/c2']}>
-            <Routes>
-              <Route path="c2" element={<CityRoute country="c2" city="city2" />} />
-            </Routes>
+            <CityRoute country="c2" city="city2" />
           </MemoryRouter>
         </Provider>,
       );
@@ -138,9 +138,7 @@ describe('Test all the App:', () => {
       const { container } = render(
         <Provider store={store}>
           <MemoryRouter initialEntries={['/c2']}>
-            <Routes>
-              <Route path="c2" element={<NationRoute country="c2" />} />
-            </Routes>
+            <NationRoute country="c2" />
           </MemoryRouter>
         </Provider>,
       );
@@ -177,9 +175,7 @@ describe('Test all the App:', () => {
       const { container } = render(
         <Provider store={store}>
           <MemoryRouter>
-            <Routes>
-              <Route path="/" element={<Nation />} />
-            </Routes>
+            <Nation />
           </MemoryRouter>
         </Provider>,
       );
@@ -191,8 +187,8 @@ describe('Test all the App:', () => {
     await act(async () => {
       const { container } = render(
         <Provider store={store}>
-          <MemoryRouter initialEntries={['/c1']}>
-            <NationItem index={0} country="c1" count={2} />
+          <MemoryRouter initialEntries={['/c1', '/c1/city1']}>
+            <NationItem index={1} country="c1" count={2} />
           </MemoryRouter>
         </Provider>,
       );
@@ -205,11 +201,27 @@ describe('Test all the App:', () => {
       const { container } = render(
         <Provider store={store}>
           <MemoryRouter initialEntries={['/c1', '/']}>
-            <MyHeader stats="country" title="city" country="c1" amount={1} />
+            <MyHeader stats="city1" title="city nobel winners" country="c1" amount={1} />
           </MemoryRouter>
         </Provider>,
       );
       expect(container).toMatchSnapshot();
+    });
+  });
+
+  it('should find the button', async () => {
+    render(
+      <Provider store={store}>
+        <MemoryRouter initialEntries={['/c1', '/']}>
+          <MyHeader stats="city1" title="country nobel" country="c1" amount={1} />
+        </MemoryRouter>
+      </Provider>,
+    );
+
+    await act(async () => {
+      const btn = document.querySelector('button');
+      expect(btn).toBeTruthy();
+      expect(document.body.textContent).toContain('country nobel');
     });
   });
 });

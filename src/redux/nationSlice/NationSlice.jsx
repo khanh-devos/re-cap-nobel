@@ -46,7 +46,6 @@ const nobelSlice = createSlice({
     builder
       .addCase(fetchNobel.pending, (state) => ({
         ...state,
-        isLoading: false,
       }))
       .addCase(fetchNobel.fulfilled, (state, { payload }) => {
         const arr = payload.laureates.map((item) => {

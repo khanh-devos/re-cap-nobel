@@ -7,11 +7,14 @@ import { fetchNobel } from './redux/nationSlice/NationSlice';
 import Allroutes from './routes/Allroutes';
 
 function App() {
+  const { isLoading } = useSelector((store) => store.nobel);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchNobel());
   }, [dispatch]);
+
+  if (isLoading) return <h3>Loading...</h3>;
 
   return (
     <div className="App">
