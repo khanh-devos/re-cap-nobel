@@ -25,7 +25,6 @@ export const fetchNobel = createAsyncThunk(
 export const takeUniqueCountries = (arr) => {
   const uniqueCountries = [];
   const compare = [];
-  // console.log('takeUniqueCountries'.toUpperCase());
 
   arr.forEach(({ country, id, city }) => {
     if (!compare.includes(country)) {
@@ -60,9 +59,6 @@ const nobelSlice = createSlice({
             categoryFullName: { en: category },
             prizeAmount: prize,
           } = item.nobelPrizes[0];
-
-          // const city = city123.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-          // const country = country123.replace(/[^a-z0-9]/gi, '_').toLowerCase();
 
           return {
             id, fullname, gender, date, city, country, awardYear, category, prize,

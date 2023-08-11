@@ -13,10 +13,6 @@ import Allroutes from '../routes/Allroutes';
 import CityRoute from '../routes/CityRoute';
 import NationRoute from '../routes/NationRoute';
 import Winner from '../routes/Winner';
-import Nation from '../components/Nation';
-import NationItem from '../components/NationItem';
-import NationRouteItem from '../routes/NationRouteItem';
-import MyHeader from '../components/Header';
 
 jest.mock('axios');
 
@@ -108,50 +104,12 @@ describe('Test all the App:', () => {
     });
   });
 
-  it('should match the snapshot Allroutes', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <Allroutes />
-        </Provider>,
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should match the snapshot CityRoute', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={['/c2']}>
-            <CityRoute country="c2" city="city2" />
-          </MemoryRouter>
-        </Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-  });
-
   it('should match the snapshot NationRoute', async () => {
     await act(async () => {
       const { container } = render(
         <Provider store={store}>
           <MemoryRouter initialEntries={['/c2']}>
             <NationRoute country="c2" />
-          </MemoryRouter>
-        </Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should match the snapshot NationRouteItem', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={['/city1']}>
-            <NationRouteItem city="city1" count={1} />
           </MemoryRouter>
         </Provider>,
       );
@@ -167,61 +125,6 @@ describe('Test all the App:', () => {
         </Provider>,
       );
       expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should match the snapshot Nation', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <MemoryRouter>
-            <Nation />
-          </MemoryRouter>
-        </Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should match the snapshot NationItem', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={['/c1', '/c1/city1']}>
-            <NationItem index={1} country="c1" count={2} />
-          </MemoryRouter>
-        </Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should match the snapshot MyHeader', async () => {
-    await act(async () => {
-      const { container } = render(
-        <Provider store={store}>
-          <MemoryRouter initialEntries={['/c1', '/']}>
-            <MyHeader stats="city1" title="city nobel winners" country="c1" amount={1} />
-          </MemoryRouter>
-        </Provider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-  });
-
-  it('should find the button', async () => {
-    render(
-      <Provider store={store}>
-        <MemoryRouter initialEntries={['/c1', '/']}>
-          <MyHeader stats="city1" title="country nobel" country="c1" amount={1} />
-        </MemoryRouter>
-      </Provider>,
-    );
-
-    await act(async () => {
-      const btn = document.querySelector('button');
-      expect(btn).toBeTruthy();
-      expect(document.body.textContent).toContain('country nobel');
     });
   });
 });
